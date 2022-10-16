@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="First">
+            <MenuFlyoutItem Text="Redmond, USA" />
+            <MenuFlyoutItem Text="London, UK" />
+        </MenuBarItem>
+        <MenuBarItem Text="View">
+            <MenuFlyoutItem Text="Refresh" />
+            <MenuFlyoutItem Text="Change Theme" />
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Item A" IconImageSource="dotnet_bot.png" />
+        <ToolbarItem Text="Item B" IconImageSource="dotnet_bot.png" />
+    </ContentPage.ToolbarItems>
+
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+            <Image Source="dotnet_bot.png" HeightRequest="200" />
+            <Label Text="Welcome to MainPage!" FontSize="18" HorizontalOptions="Center" />
+            <Button x:Name="CounterBtn" Text="Click me" Clicked="OnCounterClicked" HorizontalOptions="Center" />
+            <Button Text="Switch to MainPage 2" Clicked="OnSwitchMainPage" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
